@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yahay Tambayan | Contact Us</title>
+
+<meta name="description" content="Cozy, Relaxing, Affordable Local Hangout in Boljoon Cebu">
+<meta name="keywords" content="Yahay Tambayan, Boljoon Cebu, Snacks, Drinks, Community">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+body{
+  min-height:100vh;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  display:flex;
+  flex-direction:column;
+  color:#fff;
+}
+
+/* NEON FLICKER ANIMATION */
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { text-shadow: 
+    0 0 4px #0ff,
+    0 0 10px #0ff,
+    0 0 20px #0ff,
+    0 0 30px #0ff,
+    0 0 40px #0ff;
+  }
+  20%, 22%, 24%, 55% { text-shadow: none; color:#0ff; }
+}
+
+/* HEADER */
+header{
+  text-align:center;
+  padding:50px 20px 30px;
+  font-size:48px;
+  font-weight:700;
+  letter-spacing:3px;
+  color:#0ff;
+  animation: flicker 1.5s infinite;
+}
+
+/* NAVIGATION */
+nav{
+  text-align:center;
+  padding:15px;
+}
+
+nav a{
+  text-decoration:none;
+  margin:0 20px;
+  font-weight:600;
+  color:#ff0;
+  position:relative;
+  transition:0.3s;
+  text-shadow: 0 0 5px #ff0, 0 0 10px #ff0;
+}
+
+nav a::after{
+  content:"";
+  width:0%;
+  height:2px;
+  background:#0ff;
+  position:absolute;
+  left:0;
+  bottom:-5px;
+  transition:0.3s;
+}
+
+nav a:hover::after{
+  width:100%;
+}
+
+/* CONTACT FORM CONTAINER */
+.container{
+  width:90%;
+  max-width:600px;
+  margin:50px auto;
+  background: rgba(0,0,0,0.85);
+  border-radius:20px;
+  padding:40px;
+  box-shadow: 0 0 20px #0ff, 0 0 40px #ff0;
+}
+
+.container h2{
+  text-align:center;
+  margin-bottom:30px;
+  color:#0ff;
+  font-size:28px;
+  letter-spacing:1px;
+  text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+}
+
+/* FLOATING LABELS */
+.form-group{
+  position:relative;
+  margin-bottom:20px;
+}
+
+.form-group input,
+.form-group textarea{
+  width:100%;
+  padding:15px;
+  border-radius:12px;
+  border:1px solid #0ff;
+  outline:none;
+  font-size:16px;
+  background:transparent;
+  color:#fff;
+  transition:0.3s;
+  text-shadow: 0 0 2px #0ff;
+}
+
+.form-group label{
+  position:absolute;
+  top:50%;
+  left:15px;
+  transform: translateY(-50%);
+  color:#ff0;
+  font-weight:600;
+  pointer-events:none;
+  transition:0.3s;
+  background: rgba(0,0,0,0.85);
+  padding:0 5px;
+  text-shadow: 0 0 5px #ff0;
+}
+
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label,
+.form-group textarea:focus + label,
+.form-group textarea:not(:placeholder-shown) + label{
+  top:-10px;
+  font-size:12px;
+  color:#0ff;
+  text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+}
+
+/* BUTTON WITH FLICKER */
+button{
+  width:100%;
+  padding:15px;
+  border:none;
+  border-radius:30px;
+  background:#ff0;
+  color:#000;
+  font-weight:700;
+  font-size:16px;
+  cursor:pointer;
+  transition:0.3s;
+  box-shadow: 0 0 5px #ff0, 0 0 15px #ff0, 0 0 25px #ff0;
+  animation: flicker 2s infinite;
+}
+
+button:hover{
+  background:#0ff;
+  color:#000;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #0ff, 0 0 25px #0ff, 0 0 40px #0ff;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:20px;
+  margin-top:auto;
+  color:#0ff;
+  font-size:14px;
+  text-shadow: 0 0 5px #0ff;
+}
+</style>
+</head>
+
+<body>
+
+<header>Yahay Tambayan</header>
+
+<nav>
+<a href="home.html">Home</a>
+<a href="Event.html">Event</a>
+<a href="Contact.html">Contact Us</a>
+<a href="Products.html">Product</a>
+</nav>
+
+<div class="container">
+<h2>Contact Us</h2>
+
+<form>
+  <div class="form-group">
+    <input type="text" value="Honorina Valles" required>
+    <label>Contact Person Name</label>
+  </div>
+
+  <div class="form-group">
+    <input type="email" value="yahaytambayan@gmail.com" required>
+    <label>Email Address</label>
+  </div>
+
+  <div class="form-group">
+    <input type="tel" value="09333978510" required>
+    <label>Mobile Number</label>
+  </div>
+
+  <div class="form-group">
+    <input type="text" value="(Optional)">
+    <label>Landline Number (Optional)</label>
+  </div>
+
+  <div class="form-group">
+    <textarea rows="3" required>Poblacion, Boljoon, Cebu</textarea>
+    <label>Permanent Address</label>
+  </div>
+
+  <button type="submit">Send Message</button>
+</form>
+</div>
+
+<footer>
+© 2025 Yahay Tambayan | Boljoon, Cebu
+</footer>
+
+</body>
+</html>

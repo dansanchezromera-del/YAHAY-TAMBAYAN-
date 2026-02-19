@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YAHAY TAMBAYAN | Boljoon, Cebu</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: url('dane12.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+/* Dark overlay */
+.main{
+    min-height:100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8));
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:flex-start;
+    text-align:center;
+    padding:60px 20px;
+}
+
+/* Glowing Title */
+.title{
+    font-size:60px;
+    font-weight:bold;
+    background: linear-gradient(45deg, #ffdd00, #ff6600, #ff0000);
+    -webkit-background-clip:text;
+    color:transparent;
+    animation: neonGlow 2s ease-in-out infinite alternate;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+@keyframes neonGlow{
+    0%{ text-shadow: 0 0 5px #ffdd00, 0 0 10px #ff6600, 0 0 20px #ff0000; }
+    50%{ text-shadow: 0 0 15px #ffdd00, 0 0 25px #ff6600, 0 0 40px #ff0000; }
+    100%{ text-shadow: 0 0 5px #ffdd00, 0 0 10px #ff6600, 0 0 20px #ff0000; }
+}
+
+.subtitle{
+    margin-top:15px;
+    font-size:22px;
+    color:#00ffff;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+}
+
+/* Navigation */
+nav{
+    margin:30px 0;
+}
+
+nav a{
+    text-decoration:none;
+    color:#ffdd00;
+    margin:0 20px;
+    font-weight:700;
+    font-size:18px;
+    position:relative;
+    text-shadow: 0 0 5px #ffdd00, 0 0 10px #ff6600;
+    transition:0.3s;
+}
+
+nav a::after{
+    content:"";
+    position:absolute;
+    width:0%;
+    height:2px;
+    background:#00ffff;
+    left:0;
+    bottom:-5px;
+    transition:0.4s;
+}
+
+nav a:hover::after{
+    width:100%;
+}
+
+/* Glass Card */
+.card{
+    margin-top:40px;
+    backdrop-filter: blur(15px);
+    background: rgba(255,255,255,0.05);
+    border-radius:20px;
+    padding:40px;
+    width:90%;
+    max-width:1000px;
+    box-shadow: 0 0 20px #00ffff, 0 0 40px #ffdd00, 0 0 60px #ff6600;
+    transition:0.5s;
+}
+
+.card:hover{
+    box-shadow: 0 0 35px #00ffff, 0 0 70px #ffdd00, 0 0 90px #ff6600;
+}
+
+/* Card Content */
+.card h2{
+    font-size:32px;
+    color:#ffdd00;
+    text-shadow: 0 0 10px #ffdd00, 0 0 20px #ff6600;
+    margin-bottom:15px;
+}
+
+.card p{
+    font-size:18px;
+    color:#00ffff;
+    text-shadow: 0 0 5px #00ffff;
+}
+
+/* Gallery */
+.gallery{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+    margin-top:30px;
+}
+
+.gallery img{
+    width:280px;
+    height:280px;
+    object-fit:cover;
+    border-radius:20px;
+    transition:0.5s;
+    box-shadow: 0 0 10px #00ffff, 0 0 20px #ffdd00, 0 0 30px #ff6600;
+}
+
+.gallery img:hover{
+    transform:scale(1.1) rotate(3deg);
+    box-shadow: 0 0 25px #00ffff, 0 0 50px #ffdd00, 0 0 70px #ff6600;
+}
+
+/* Footer */
+.footer{
+    margin-top:50px;
+    font-size:14px;
+    color:#ffdd00;
+    text-shadow: 0 0 10px #ffdd00;
+}
+</style>
+</head>
+
+<body>
+
+<div class="main">
+
+<div class="title">YAHAY TAMBAYAN</div>
+<div class="subtitle">A welcoming space where delicious meals greet you at the door ✨</div>
+
+<nav>
+<a href="home.html">HOME</a>
+<a href="event.html">EVENT</a>
+<a href="contact.html">CONTACT</a>
+<a href="products.html">PRODUCTS</a>
+</nav>
+
+<div class="card">
+<h2>Experience the Vibe</h2>
+<p>Relax. Unwind. Connect. Enjoy the warmth of community here in Boljoon, Cebu.</p>
+
+<div class="gallery">
+<img src="dane11.jpg">
+<img src="dane11.jpg">
+<img src="dane11.jpg">
+</div>
+</div>
+
+<div class="footer">
+© 2025 Yahay Tambayan | Designed with passion ✨
+</div>
+
+</div>
+
+</body>
+</html>

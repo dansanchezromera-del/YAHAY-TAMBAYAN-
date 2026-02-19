@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YAHAY TAMBAYAN | Boljoon, Cebu</title>
+<meta name="description" content="Cozy, Relaxing, Affordable, Local, Friendly Hangout Spot in Boljoon, Cebu.">
+<meta name="keywords" content="Yahay Tambayan, Boljoon Cebu, Local Hangout, Snacks, Drinks">
+
+<style>
+/* Body and background */
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background: url('dane12.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Sparkling background animation */
+@keyframes sparkle {
+    0% {transform: translateY(0) rotate(0deg);}
+    100% {transform: translateY(-200px) rotate(360deg);}
+}
+.sparkle {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: #ffcc00;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: sparkle 5s linear infinite;
+}
+
+/* Overlay */
+.overlay{
+    background: rgba(0,0,0,0.75);
+    padding:40px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Neon Glowing Headers */
+h1{
+    text-align:center;
+    font-size:55px;
+    color: #ffdd00;
+    text-shadow: 0 0 10px #ffdd00, 0 0 20px #ffaa00, 0 0 30px #ff7700, 0 0 40px #ff3300;
+    animation: neonGlow 2s ease-in-out infinite alternate;
+}
+
+h2{
+    text-align:center;
+    color:#00ffff;
+    text-shadow: 0 0 5px #00ffff, 0 0 15px #00ccff, 0 0 25px #0099ff;
+    animation: neonGlowBlue 2s ease-in-out infinite alternate;
+}
+
+@keyframes neonGlow{
+    0% {text-shadow: 0 0 5px #ffdd00, 0 0 10px #ffaa00, 0 0 15px #ff7700;}
+    50% {text-shadow: 0 0 15px #ffdd00, 0 0 25px #ffaa00, 0 0 35px #ff7700;}
+    100% {text-shadow: 0 0 5px #ffdd00, 0 0 10px #ffaa00, 0 0 15px #ff7700;}
+}
+
+@keyframes neonGlowBlue{
+    0% {text-shadow: 0 0 5px #00ffff, 0 0 10px #00ccff, 0 0 15px #0099ff;}
+    50% {text-shadow: 0 0 15px #00ffff, 0 0 25px #00ccff, 0 0 35px #0099ff;}
+    100% {text-shadow: 0 0 5px #00ffff, 0 0 10px #00ccff, 0 0 15px #0099ff;}
+}
+
+/* Navigation */
+nav{
+    text-align:center;
+    margin:20px 0;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-size:18px;
+    font-weight:bold;
+    transition:0.3s;
+    text-shadow: 0 0 5px white;
+}
+
+nav a:hover{
+    color: #ffdd00;
+    text-shadow: 0 0 10px #ffdd00, 0 0 20px #ffaa00, 0 0 30px #ff7700;
+}
+
+/* Neon Glowing Sections */
+.section{
+    margin:30px auto;
+    max-width:900px;
+    padding:25px;
+    background: rgba(0,0,0,0.2);
+    border-radius:20px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 20px #00ffff, 0 0 40px #ffdd00, 0 0 60px #ff7700;
+    transition: transform 0.3s, box-shadow 0.5s;
+}
+
+.section:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 40px #00ffff, 0 0 80px #ffdd00, 0 0 100px #ff7700;
+}
+
+.section h3{
+    color:#ffdd00;
+    text-shadow: 0 0 5px #ffdd00, 0 0 10px #ffaa00;
+}
+
+/* Video & Audio */
+.video-section{
+    text-align:center;
+    margin-top:40px;
+}
+
+video, audio{
+    border-radius:10px;
+    box-shadow: 0 0 20px #00ffff, 0 0 40px #ffdd00;
+}
+
+/* Floating Sparkles */
+.sparkle-container{
+    position:absolute;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    top:0;
+    left:0;
+    pointer-events:none;
+    z-index:0;
+}
+</style>
+</head>
+
+<body>
+
+<div class="sparkle-container">
+    <!-- multiple sparkles -->
+    <div class="sparkle" style="top:50%; left:10%; animation-duration:6s;"></div>
+    <div class="sparkle" style="top:20%; left:70%; animation-duration:4s;"></div>
+    <div class="sparkle" style="top:80%; left:40%; animation-duration:5s;"></div>
+    <div class="sparkle" style="top:30%; left:25%; animation-duration:7s;"></div>
+    <div class="sparkle" style="top:60%; left:85%; animation-duration:6s;"></div>
+</div>
+
+<div class="overlay">
+    <h1>Welcome to YAHAY TAMBAYAN</h1>
+    <h2>A welcoming space where delicious meals greet you at the door.</h2>
+
+    <nav>
+        <a href="home.html">HOME</a>
+        <a href="event.html">EVENT</a>
+        <a href="contact.html">CONTACT US</a>
+        <a href="products.html">PRODUCT</a>
+    </nav>
+
+    <div class="section">
+        <h3>History</h3>
+        <p>
+            Yahay Tambayan Boljoon was established on December 3, 2023. It was created as a community hangout where people can relax, meet friends, and enjoy the local atmosphere. Located in the historic town of Boljoon, it blends cultural heritage with a modern and welcoming space for both locals and visitors.
+        </p>
+    </div>
+
+    <div class="section">
+        <h3>Life of the Founder</h3>
+        <p>
+            The owner of Yahay Tambayan is a single mother who worked in the hotel and restaurant industry before starting the business. She is the third among six siblings and graduated from USPF with a degree in Hotel and Restaurant Management. Her experience in various hotels and restaurants helped her gain the skills needed to start her own business.
+        </p>
+    </div>
+
+    <div class="section">
+        <h3>Success of the Business</h3>
+        <p>
+            Despite financial challenges and personal responsibilities, the owner remained determined and passionate. Through hard work and perseverance, Yahay Tambayan grew into a well-loved hangout spot in the community. Her journey shows that resilience and commitment can turn small beginnings into success.
+        </p>
+    </div>
+
+    <div class="section">
+        <h3>Challenges</h3>
+        <p>
+            Balancing motherhood and business was not easy. The owner faced financial limitations, long working hours, and competition from other establishments. However, her dedication and strong vision helped her overcome these obstacles.
+        </p>
+    </div>
+
+    <div class="section">
+        <h3>Future Vision</h3>
+        <p>
+            Ten years from now, the business aims to expand into multiple branches and provide more job opportunities to people in need.
+        </p>
+    </div>
+
+    <div class="section">
+        <h3>Government Support</h3>
+        <p>
+            The Philippine government helped through programs supporting small entrepreneurs. Through the Department of Trade and Industry (DTI), the owner was able to legally register the business, strengthening credibility and customer trust.
+        </p>
+    </div>
+
+    <div class="video-section">
+        <h2 style="color:#ff6600;">Message Towards the Customers</h2>
+        <video width="400" controls>
+            <source src="bertamar.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <br><br>
+        <audio controls>
+            <source src="bertamar.mp4" type="audio/mp4">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+</div>
+
+</body>
+</html>
