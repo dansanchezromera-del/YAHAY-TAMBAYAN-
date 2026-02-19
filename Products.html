@@ -1,79 +1,144 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<HEAD>
-<TITLE> Yahay Tambayan</TITLE>
- <meta name= " description" content="1.Local store
-2.Affordable prices
-3.Quality products
-4.Friendly service
-5.Convenient location
-6.Everyday essentials
-7.Trusted shop
-8.Walk-in customers
-9.Community business
-10.Reliable merchandise ">
-   <meta name="Keyword" context=Chrisgel Store offers affordable daily essentials and services>
- </HEAD>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yahay Tambayan | Products</title>
+
+<meta name="description" content="Affordable and quality food and drinks at Yahay Tambayan.">
+<meta name="keywords" content="Yahay Tambayan, Boljoon Cebu, Local Hangout, Snacks, Drinks">
+
 <style>
-    body {
-        background: url('bertaa.jpg') no-repeat center center fixed;
-        background-size: cover;
-        font-family: Arial, sans-serif;
-        color: #ffffff;
-        margin: 0;
-        padding: 0;
-    }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
 
-    .header {
-        background-color: rgba(0, 0, 255, 0.7);
-        padding: 20px;
-        text-align: center;
-    }
+/* Body and background */
+body{
+    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('bertaa.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    min-height:100vh;
+}
 
-    .header h1 {
-        margin: 0;
-        color: #ffffff;
-    }
+/* Header */
+.header{
+    text-align:center;
+    padding:50px 20px;
+    background: rgba(0,0,0,0.5);
+    border-bottom: 2px solid #00ffff;
+}
 
-    nav {
-        text-align: center;
-        background-color: rgba(0, 0, 0, 0.6);
-        padding: 10px;
-    }
+.header h1{
+    font-size:48px;
+    color: #00ffff;
+    letter-spacing:2px;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #ffcc00;
+    animation: neonGlow 2s ease-in-out infinite alternate;
+}
 
-    nav a {
-        text-decoration: none;
-        color: #00ffff;
-        margin: 0 15px;
-        font-size: 20px;
-        font-weight: bold;
-    }
+@keyframes neonGlow{
+    0%{ text-shadow: 0 0 5px #00ffff, 0 0 15px #00ffff, 0 0 25px #ffcc00; }
+    50%{ text-shadow: 0 0 15px #00ffff, 0 0 30px #00ffff, 0 0 50px #ffcc00; }
+    100%{ text-shadow: 0 0 5px #00ffff, 0 0 15px #00ffff, 0 0 25px #ffcc00; }
+}
 
-    .product-section {
-        text-align: center;
-        margin: 30px auto;
-        width: 80%;
-        background-color: rgba(0, 0, 0, 0.5);
-        padding: 20px;
-        border-radius: 15px;
-    }
+/* Navigation */
+nav{
+    text-align:center;
+    padding:15px;
+    background: rgba(0,0,0,0.4);
+}
 
-    .product-section h2 {
-        color: #00ccff;
-    }
+nav a{
+    text-decoration:none;
+    color:#00ffff;
+    margin:0 20px;
+    font-weight:600;
+    font-size:18px;
+    position:relative;
+    text-shadow: 0 0 5px #00ffff;
+    transition: 0.3s;
+}
 
-    .product-section img {
-        height: 300px;
-        border-radius: 10px;
-        margin: 15px 0;
-    }
+nav a::after{
+    content:"";
+    position:absolute;
+    width:0;
+    height:2px;
+    bottom:-5px;
+    left:0;
+    background:#ffcc00;
+    transition:0.3s;
+}
 
-    .description {
-        font-size: 18px;
-        color: #ffff88;
-        padding: 10px;
-    }
+nav a:hover::after{
+    width:100%;
+}
+
+/* Products grid */
+.products{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap:30px;
+    width:90%;
+    max-width:1200px;
+    margin:50px auto;
+}
+
+/* Product Card */
+.product-section{
+    background: rgba(255,255,255,0.05);
+    border-radius:20px;
+    padding:20px;
+    text-align:center;
+    transition: transform 0.3s, box-shadow 0.5s;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px #00ffff, 0 0 20px #ffcc00;
+}
+
+.product-section:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #00ffff, 0 0 40px #ffcc00, 0 0 60px #ff6600;
+}
+
+.product-section h2{
+    color:#ffcc00;
+    margin-bottom:15px;
+    text-shadow: 0 0 5px #ffcc00, 0 0 10px #ff6600;
+    animation: glowText 2s ease-in-out infinite alternate;
+}
+
+@keyframes glowText{
+    0%{ text-shadow: 0 0 5px #ffcc00, 0 0 10px #ff6600; }
+    50%{ text-shadow: 0 0 10px #ffcc00, 0 0 20px #ff6600; }
+    100%{ text-shadow: 0 0 5px #ffcc00, 0 0 10px #ff6600; }
+}
+
+.product-section img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:15px;
+    margin-bottom:15px;
+    box-shadow: 0 0 10px #00ffff, 0 0 20px #ffcc00;
+    transition: 0.4s;
+}
+
+.product-section img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00ffff, 0 0 40px #ffcc00, 0 0 60px #ff6600;
+}
+
+.product-section p.description{
+    font-size:16px;
+    line-height:1.6;
+    color:#ffffaa;
+}
+
 </style>
 </head>
 
@@ -84,41 +149,46 @@
 </div>
 
 <nav>
-    <a href="index.html">HOME</a> |
-    <a href="Events.html">EVENTS</a> |
-    <a href="Contact.html">CONTACT US</a> |
-    <a href="Products.html">PRODUCTS</a>
+    <a href=landing.html>HOME</a> |
+    <a href=event.html>EVENTS</a> |
+    <a href=contact.html>CONTACT US</a> |
+    <a href=Products.html>PRODUCTS</a>
 </nav>
 
-<div class="product-section">
-    <h2>Dragon fruit shake</h2>
-    <img src="dan3.jpg" alt="KK.jpg">
-    <p class="description">
-        Dragon fruit is rich in vitamins such as vitamin C, which boosts immunity and acts as an antioxidant, plus B‑vitamins including B1, B2, and B3 that support energy metabolism. It also provides dietary fiber, antioxidants like betacyanins, and minerals such as iron and magnesium, contributing to overall health and antioxidant protection.
-    </p>
-</div>
+<div class="products">
 
-<div class="product-section">
-    <h2>Fries</h2>
-    <img src="dan11.jpg" alt="Pampers Product">
-    <p class="description">
-        Fries contain Vitamin C for immunity, Vitamin B6 for energy, and potassium for heart and muscle function, but should be eaten in moderation.
-    </p>
-</div>
+    <div class="product-section">
+        <h2>Dragon Fruit Shake</h2>
+        <img src=dan3.jpg alt="Dragon Fruit Shake">
+        <p class="description">
+            Dragon fruit is rich in vitamins such as vitamin C, which boosts immunity and acts as an antioxidant, plus B‑vitamins including B1, B2, and B3 that support energy metabolism. It also provides dietary fiber, antioxidants like betacyanins, and minerals such as iron and magnesium, contributing to overall health and antioxidant protection.
+        </p>
+    </div>
 
-<div class="product-section">
-    <h2> Cheesy Beef Wrap
-    <img src="wow.jpg" alt="Cheesy Beef Wrap">
-    <p class="description">
-        This wrap provides Vitamin B12 and B6 for energy and brain health, iron for healthy blood, calcium for strong bones, and fiber from vegetables for good digestion.
-    </p>
-</div>
-  <div class="product-section">
-    <h2>Ube Halo-Halo Cups</h2>
-    <img src="bbb.jpg" alt="Mojito Drink">
-    <p class="description">
-      Halo-halo gives Vitamin A for healthy eyes, Vitamin C for immunity, calcium for strong bones, and protein from beans and nuts for energy and growth.
-    </p>
+    <div class="product-section">
+        <h2>Fries</h2>
+        <img src=dan11.jpg alt="Fries">
+        <p class="description">
+            Fries contain Vitamin C for immunity, Vitamin B6 for energy, and potassium for heart and muscle function, but should be eaten in moderation.
+        </p>
+    </div>
+
+    <div class="product-section">
+        <h2>Cheesy Beef Wrap</h2>
+        <img src=wow.jpg alt="Cheesy Beef Wrap">
+        <p class="description">
+            This wrap provides Vitamin B12 and B6 for energy and brain health, iron for healthy blood, calcium for strong bones, and fiber from vegetables for good digestion.
+        </p>
+    </div>
+
+    <div class="product-section">
+        <h2>Ube Halo-Halo Cups</h2>
+        <img src=bbb.jpg alt="Ube Halo-Halo">
+        <p class="description">
+            Halo-halo gives Vitamin A for healthy eyes, Vitamin C for immunity, calcium for strong bones, and protein from beans and nuts for energy and growth.
+        </p>
+    </div>
+
 </div>
 
 </body>
